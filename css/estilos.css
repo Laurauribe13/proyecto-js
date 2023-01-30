@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bienvenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bienvenido h1{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.bienvenido img{
+    width: 1000px;
+    height: 500px;
+}
+
+/*----MEDIA QUERY----*/
+
+@media screen and (max-width:1250px){
+    .bienvenido h1{
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 160px;
+    }
+
+    .bienvenido img{
+        width: 800px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:950px){
+    .bienvenido h1{
+        font-weight: 500;
+    }
+
+    .bienvenido img{
+        width: 700px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:840px){
+    .bienvenido h1{
+        font-size: 45px;
+    }
+
+    .bienvenido img{
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:760px){
+    .bienvenido h1{
+        font-size: 40px;
+    }
+
+    .bienvenido img{
+        width: 550px;
+    }
+}
+
+@media screen and (max-width:675px){
+    .bienvenido h1{
+        font-size: 30px;
+    }
+
+    .bienvenido img{
+        width: 500px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:540px){
+    .bienvenido h1{
+        font-size: 25px;
+        margin-top: 180px;
+    }
+
+    .bienvenido img{
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:440px){
+    .bienvenido h1{
+        font-size: 20px;
+        margin-top: 200px;
+    }
+
+    .bienvenido img{
+        width: 300px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:350px){
+    .bienvenido h1{
+        font-size: 18px;
+        margin-top: 230px;
+    }
+
+    .bienvenido img{
+        width: 300px;
+        height: 200px;
+    }
+}
