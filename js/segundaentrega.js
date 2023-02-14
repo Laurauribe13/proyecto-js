@@ -6,10 +6,10 @@ class Invitado {
     }
 }
 
-const invitado1 = new Invitado ("Natalia Uribe", "1128478566", "30");
-const invitado2 = new Invitado ("Mery Ruiz", "43550247", "50");
-const invitado3 = new Invitado ("Sebastian Patiño", "1152197180", "33");
-const invitado4 = new Invitado ("Mateo Naranjo", "1216716570", "23");
+const invitado1 = new Invitado ("Natalia Uribe", 1128478566, 30);
+const invitado2 = new Invitado ("Mery Ruiz", 43550247, 50);
+const invitado3 = new Invitado ("Sebastian Patiño", 1152197180, 33);
+const invitado4 = new Invitado ("Mateo Naranjo", 1216716570, 23);
 
 const arrayInvitados = [invitado1, invitado2, invitado3, invitado4];
 
@@ -24,10 +24,10 @@ class Regalo {
     }
 }
 
-const regalo1 = new Regalo ("Nevera", "Samsung", "2140", "925.890");
-const regalo2 = new Regalo ("Vajilla", "Ambiente Gourmet", "3098", "695.785");
-const regalo3 = new Regalo ("Televisor", "LG", "2345", "745.999");
-const regalo4 = new Regalo ("Sábanas de 1000 hilos", "Brissa", "5673", "898.996");
+const regalo1 = new Regalo ("Nevera", "Samsung", 2140, 925.890);
+const regalo2 = new Regalo ("Vajilla", "Ambiente Gourmet", 3098, 695.785);
+const regalo3 = new Regalo ("Televisor", "LG", 2345, 745.999);
+const regalo4 = new Regalo ("Sábanas de 1000 hilos", "Brissa", 5673, 898.996);
 
 const arrayRegalos = [regalo1, regalo2, regalo3, regalo4];
 
@@ -72,7 +72,7 @@ function agregarRegalo() {
         precio = parseInt(prompt("El precio no es valido, por favor vuelva a ingresarlo:"));
     }
     console.log(producto, marca, referencia, precio);
-    alert("El producto " + nombre + " ingresa al sistema con el siguiente precio " + (precio * 377) + " pesos colombianos ");
+    alert("El producto " + producto + " de la marca " + marca + " referencia " + referencia + " ingresa al sistema con el siguiente precio (IVA incluido) " + precio * 1.19 + " pesos colombianos ");
 }
 
 function eliminarRegalo() {
